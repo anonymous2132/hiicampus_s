@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:niranjan_s_application2/core/app_export.dart';
+import 'package:niranjan_s_application2/presentation/onboarding_two_screen/onboarding_two_screen.dart';
 import 'package:niranjan_s_application2/widgets/custom_button.dart';
 
 class OnboardingOneScreen extends StatelessWidget {
@@ -253,6 +255,8 @@ class OnboardingOneScreen extends StatelessWidget {
                               CustomButton(
                                 width: 190,
                                 text: "\"Next\"",
+                                onTap: () =>
+                                    Get.to(() => OnboardingTwoScreen()),
                                 margin: getMargin(
                                   left: 103,
                                   top: 40,

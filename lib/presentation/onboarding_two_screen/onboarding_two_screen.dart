@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:niranjan_s_application2/core/app_export.dart';
 import 'package:niranjan_s_application2/widgets/custom_button.dart';
 import 'package:niranjan_s_application2/widgets/custom_text_form_field.dart';
+
+import '../onboarding_three_screen/onboarding_three_screen.dart';
 
 class OnboardingTwoScreen extends StatelessWidget {
   @override
@@ -403,14 +406,17 @@ class OnboardingTwoScreen extends StatelessWidget {
                                                   right: 23,
                                                   bottom: 24,
                                                 ),
-                                                child: CommonImageView(
-                                                  svgPath: ImageConstant
-                                                      .imgArrowleft,
-                                                  height: getVerticalSize(
-                                                    9.00,
-                                                  ),
-                                                  width: getHorizontalSize(
-                                                    17.00,
+                                                child: InkWell(
+                                                  onTap: (() => Get.back()),
+                                                  child: CommonImageView(
+                                                    svgPath: ImageConstant
+                                                        .imgArrowleft,
+                                                    height: getVerticalSize(
+                                                      9.00,
+                                                    ),
+                                                    width: getHorizontalSize(
+                                                      17.00,
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -422,6 +428,8 @@ class OnboardingTwoScreen extends StatelessWidget {
                                     CustomButton(
                                       width: 261,
                                       text: "\"Next\"",
+                                      onTap: () =>
+                                          Get.to(() => OnboardingThreeScreen()),
                                       margin: getMargin(
                                         left: 11,
                                       ),

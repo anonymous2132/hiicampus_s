@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:niranjan_s_application2/core/app_export.dart';
 import 'package:niranjan_s_application2/widgets/custom_button.dart';
+
+import '../onboarding_five_screen/onboarding_five_screen.dart';
 
 class OnboardingFourScreen extends StatelessWidget {
   @override
@@ -460,6 +463,7 @@ class OnboardingFourScreen extends StatelessWidget {
                   CustomButton(
                     width: 261,
                     text: "\"Get Meetup Details\"",
+                    onTap: () => Get.to(() => OnboardingFiveScreen()),
                     margin: getMargin(
                       left: 66,
                       top: 10,

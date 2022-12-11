@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:niranjan_s_application2/core/app_export.dart';
 import 'package:niranjan_s_application2/widgets/custom_button.dart';
 import 'package:niranjan_s_application2/widgets/custom_text_form_field.dart';
+
+import '../onboarding_four_screen/onboarding_four_screen.dart';
 
 class OnboardingThreeScreen extends StatelessWidget {
   @override
@@ -462,9 +465,9 @@ class OnboardingThreeScreen extends StatelessWidget {
                                       margin: EdgeInsets.all(0),
                                       color: ColorConstant.whiteA700,
                                       shape: RoundedRectangleBorder(
-                                        // borderRadius:
-                                        //     BorderRadiusStyle.roundedBorder12,
-                                      ),
+                                          // borderRadius:
+                                          //     BorderRadiusStyle.roundedBorder12,
+                                          ),
                                       child: Container(
                                         height: getVerticalSize(
                                           58.00,
@@ -509,6 +512,8 @@ class OnboardingThreeScreen extends StatelessWidget {
                                     ),
                                     CustomButton(
                                       width: 261,
+                                      onTap: () =>
+                                          Get.to(() => OnboardingFourScreen()),
                                       text: "\"Get started\"",
                                       margin: getMargin(
                                         left: 11,
