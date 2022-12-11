@@ -371,8 +371,11 @@ class OnboardingTwoScreen extends StatelessWidget {
                                       margin: EdgeInsets.all(0),
                                       color: ColorConstant.whiteA700,
                                       shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadiusStyle.roundedBorder12,
+                                        // borderRadius:
+                                        //     BorderRadiusStyle.roundedBorder12,
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(12),
+                                        ),
                                       ),
                                       child: Container(
                                         height: getVerticalSize(

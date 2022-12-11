@@ -110,7 +110,7 @@ class OnboardingFourScreen extends StatelessWidget {
                             2.00,
                           ),
                         ),
-                        borderRadius: BorderRadiusStyle.roundedBorder4,
+                        // borderRadius: BorderRadiusStyle.roundedBorder4,
                       ),
                       child: Container(
                         height: getVerticalSize(
@@ -218,7 +218,7 @@ class OnboardingFourScreen extends StatelessWidget {
                             2.00,
                           ),
                         ),
-                        borderRadius: BorderRadiusStyle.roundedBorder4,
+                        // borderRadius: BorderRadiusStyle.roundedBorder4,
                       ),
                       child: Container(
                         height: getVerticalSize(
@@ -353,8 +353,8 @@ class OnboardingFourScreen extends StatelessWidget {
                       margin: EdgeInsets.all(0),
                       color: ColorConstant.whiteA700,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadiusStyle.roundedBorder40,
-                      ),
+                          // borderRadius: BorderRadiusStyle.roundedBorder40,
+                          ),
                       child: Container(
                         height: getVerticalSize(
                           154.00,
